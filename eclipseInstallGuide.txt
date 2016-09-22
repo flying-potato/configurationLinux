@@ -1,0 +1,8 @@
+1. open web
+http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/
+#install jdk and download eclipse as said in it
+
+2. extract and double click installer(default install in ~/eclipse/
+
+3. add fast launch
+sudo cp eclipse.desktop /usr/share/applications
