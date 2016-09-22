@@ -1,0 +1,11 @@
+1. LatexTool
+Ctrl+` -> package control installation
+copy command from official website
+
+preference -> package control 
+input install and package name LatexTool
+
+2. sudo apt-get install texlive latexmk
+connect latex compiler in sublime
+
+3. restart sublime
