@@ -1,0 +1,4 @@
+install Google Pinyin on Ubuntu 14.04
+
+sudo apt-get install fcitx-googlepinyin
+im-config
