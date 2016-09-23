@@ -1,0 +1,17 @@
+install Google Pinyin on Ubuntu 14.04
+1. get fcitx and select it
+sudo apt-get install fcitx-googlepinyin
+im-config
+
+2. shutdown
+ (not sure)
+
+3. system setting->language support 
+choose chinese support
+install automatically 
+
+4. shutdown
+
+5. rightup conner->Text Entry Setting->"+" google pinyin
+
+6. shutdown
