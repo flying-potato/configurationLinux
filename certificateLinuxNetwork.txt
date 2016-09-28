@@ -1,26 +1,18 @@
 http://forum.ubuntu.org.cn/viewtopic.php?f=73&t=52155
-
-
-I can connect to the "nyu" network using WPA2 enterprise every time and get a stable connection. The connections is authenticated using the Verisign Class 3 Public certificate as well.
-
-Networking setup:
+----INSTRUCTION---- 
+I can connect to the "nyu" network using WPA2 enterprise every time and get a stable connection. The connections is authenticated using the Verisign Class 3 Public certificate as well.  
+Networking setup: 
 1. Follow the instructions in post #1 of this thread
-2. For the CA certificate, select the "Verisign_Class_3_Primary_Public_Certification_Aut hority.pem" file from the /usr/ssl/certs directory
+2. For the CA certificate, select the "Verisign_Class_3_Primary_Public_Certification_Aut hority.pem" file from the /etc/ssl/certs directory
 
-How to Connect
-1. You will initially not see an "nyu" network. If there is one and you try to select it, you might be asked for a WEP key. Ignore this connection.
-2. Select "Connect to Hidden Wireless Network" from the network manager icon and select the nyu profile you created. Click Connect.
-3. After 10-20 seconds, the connection attempt will fail and bring up the connection settings window. This is normal. Do not try to connect again, click cancel
-4. Go back to the Network Manager icon and you will notice a new "nyu" entry. Select this entry and enjoy your connection.
+1. You will initially not see an "nyu" network. If there is one and you try to select it, you might be asked for a WEP key. Ignore this connection.  2. Select "Connect to Hidden Wireless Network" from the network manager icon and select the nyu profile you created. Click Connect.  3. After 10-20 seconds, the connection attempt will fail and bring up the connection settings window. This is normal. Do not try to connect again, click cancel 4. Go back to the Network Manager icon and you will notice a new "nyu" entry. Select this entry and enjoy your connection.  My computer setup: Del M1330 Broadcom wireless chip (requires proprietary wl drivers) kernel 2.6.28-13 (previous versions probably work) Gnome using network manager Note: If the above instructions do not work for some reason, try the other class 3 certificates, or download the certificate as given in this previous post: http://ubuntuforums.org/showthread.php?t=636986 Last edited by jawahar; July 11th, 2009 at 12:30 AM.
 
 
-My computer setup:
-Del M1330
-Broadcom wireless chip (requires proprietary wl drivers)
-kernel 2.6.28-13 (previous versions probably work)
-Gnome using network manager
+----My Instruction-----
 
+涉及到的文件夹有
+/etc/NetworkManager/system-connections	存各wifi的配置文件，如果连不上nyu，请删除nyu对应的文件后重新建立链接
 
-Note: If the above instructions do not work for some reason, try the other class 3 certificates, or download the certificate as given in this previous post:
-http://ubuntuforums.org/showthread.php?t=636986
-Last edited by jawahar; July 11th, 2009 at 12:30 AM.
+/etc/ssl/certs	存放又各种证书CA,用verisign的证书试了之后（class3），如果连不上，cancel，然后点 No CA Needed
+
+然后就神奇的连上了nyu wifi
